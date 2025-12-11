@@ -108,14 +108,9 @@ class ViewController: NSViewController {
         language_selector.item(at: 6)?.tag = 6
         
         language_selector.addItem(
-            withTitle: "🇺🇸 " + NSLocalizedString("English", comment: "")
-        )
-        language_selector.item(at: 7)?.tag = 7
-        
-        language_selector.addItem(
             withTitle: "🇹🇭 " + NSLocalizedString("Thai (Missions only)", comment: "")
         )
-        language_selector.item(at: 8)?.tag = 8
+        language_selector.item(at: 7)?.tag = 7
         
         updateInstallButtonState()
         
@@ -219,26 +214,20 @@ class ViewController: NSViewController {
     }
     
     @IBAction func startGame(_ sender: Any) {
-        // Pfad zum Resource-Ordner
         guard let resourceURL = Bundle.main.resourceURL else {
             print("❌ resourceURL fehlt")
             return
         }
-        
-        // Pfad zu Contents/Resources/game
+
         let gameURL = resourceURL.appendingPathComponent("game")
-        
-        // Pfad zu launch.sh
         let scriptURL = gameURL.appendingPathComponent("launch.sh")
-        
-        // Prüfen ob vorhanden
+
         let fm = FileManager.default
         if !fm.fileExists(atPath: scriptURL.path) {
             print("❌ launch.sh nicht gefunden: \(scriptURL.path)")
             return
         }
-        
-        // Prüfen ob ausführbar
+
         if !fm.isExecutableFile(atPath: scriptURL.path) {
             print("⚠️ launch.sh ist nicht ausführbar — versuche chmod einzusetzen")
             do {
@@ -248,21 +237,28 @@ class ViewController: NSViewController {
                 return
             }
         }
-        
-        // Prozess starten
+
         let task = Process()
         task.executableURL = scriptURL
-        task.currentDirectoryURL = gameURL   // wichtig für relative Pfade in launch.sh
-        task.arguments = []                  // falls du Argumente brauchst
-        
+        task.currentDirectoryURL = gameURL
+        task.arguments = []
+
+        // Wird auf Hintergrundthread aufgerufen, wenn der Prozess endet
+        task.terminationHandler = { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.hideOverlay()
+            }
+        }
+
         do {
             try task.run()
+            showOverlay()
             print("▶️ launch.sh gestartet")
         } catch {
             print("❌ Fehler beim Starten: \(error)")
         }
     }
-    
+
     @IBAction func openProjectPage(_ sender: Any) {
         guard let url = URL(string: "https://github.com/dalerank/Akhenaten") else {
             print("❌ Ungültige URL")
@@ -384,14 +380,8 @@ class ViewController: NSViewController {
                 urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_russian.7z",
                 archiveName: "pharaoh_russian.7z"
             )
-        
+
         case 7:
-            installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_english.7z",
-                archiveName: "pharaoh_english.7z"
-            )
-            
-        case 8:
             installLanguagePack(
                 urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_thai.7z",
                 archiveName: "pharaoh_thai.7z"
