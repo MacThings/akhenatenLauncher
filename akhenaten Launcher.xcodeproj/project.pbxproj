@@ -46,15 +46,15 @@
 			);
 			productName = Postscript;
 		};
-		2ABE3CB12ED8923D00C22DCE /* Compile akhenaten */ = {
+		2ABE3CB12ED8923D00C22DCE /* Compile akhenaten Launcher */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 2ABE3CB22ED8923D00C22DCE /* Build configuration list for PBXAggregateTarget "Compile akhenaten" */;
+			buildConfigurationList = 2ABE3CB22ED8923D00C22DCE /* Build configuration list for PBXAggregateTarget "Compile akhenaten Launcher" */;
 			buildPhases = (
 				2ABE3CB52ED8924300C22DCE /* Compile */,
 			);
 			dependencies = (
 			);
-			name = "Compile akhenaten";
+			name = "Compile akhenaten Launcher";
 			packageProductDependencies = (
 			);
 			productName = "Compile akhenaten";
@@ -68,6 +68,7 @@
 		2A0ADD562EE60BDB0080CBED /* pharaoh_custom_pack.sgx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4B2EE60BC80080CBED /* pharaoh_custom_pack.sgx */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A0ADD572EE60BDB0080CBED /* pharaoh_fonts_pack.sgx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4C2EE60BC80080CBED /* pharaoh_fonts_pack.sgx */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A0ADD582EE60BDB0080CBED /* pharaoh_houses_pack.sgx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4D2EE60BC80080CBED /* pharaoh_houses_pack.sgx */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2A6B0F052EEAF2CE004B706F /* akhenaten Launcher.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A6B0F042EEAF2CE004B706F /* akhenaten Launcher.html */; };
 		2AC621842ED887E50023FB4E /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC621832ED887E50023FB4E /* Sparkle */; };
 /* End PBXBuildFile section */
 
@@ -136,16 +137,18 @@
 		2A0ADD4B2EE60BC80080CBED /* pharaoh_custom_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_custom_pack.sgx; sourceTree = "<group>"; };
 		2A0ADD4C2EE60BC80080CBED /* pharaoh_fonts_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_fonts_pack.sgx; sourceTree = "<group>"; };
 		2A0ADD4D2EE60BC80080CBED /* pharaoh_houses_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_houses_pack.sgx; sourceTree = "<group>"; };
-		2A9BCB4E2ED8C6FD00671ED4 /* akhenaten.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = akhenaten.html; path = akhenaten/akhenaten.html; sourceTree = "<group>"; };
-		2AC621202ED8833F0023FB4E /* akhenaten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = akhenaten.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A6B0F042EEAF2CE004B706F /* akhenaten Launcher.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "akhenaten Launcher.html"; path = "akhenaten Launcher/akhenaten Launcher.html"; sourceTree = "<group>"; };
+		2AC621202ED8833F0023FB4E /* akhenaten Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "akhenaten Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		2A1974DA2ED8D38600CB7863 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				akhenaten.html,
 				bin/7z,
+				"fonts/stixtwotext-bold.ttf",
+				"fonts/stixtwotext-medium.ttf",
+				"fonts/stixtwotext-regular.ttf",
 				innoextract/innoextract,
 				innoextract/innoextract.command,
 				innoextract/libboost_atomic.dylib,
@@ -161,7 +164,7 @@
 				innoextract/liblzma.5.dylib,
 				innoextract/libzstd.1.5.7.dylib,
 			);
-			target = 2AC6211F2ED8833F0023FB4E /* akhenaten */;
+			target = 2AC6211F2ED8833F0023FB4E /* akhenaten Launcher */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -251,7 +254,7 @@
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2AC621222ED8833F0023FB4E /* akhenaten */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2A1974DA2ED8D38600CB7863 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 2A1974E92ED8D3AB00CB7863 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 2A0B89102EEAB94400EEE9B3 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 2A0ADD6D2EE8EDF60080CBED /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = akhenaten; sourceTree = "<group>"; };
+		2AC621222ED8833F0023FB4E /* akhenaten Launcher */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2A1974DA2ED8D38600CB7863 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 2A1974E92ED8D3AB00CB7863 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 2A0B89102EEAB94400EEE9B3 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 2A0ADD6D2EE8EDF60080CBED /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "akhenaten Launcher"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,8 +284,8 @@
 		2AC621172ED8833F0023FB4E = {
 			isa = PBXGroup;
 			children = (
-				2A9BCB4E2ED8C6FD00671ED4 /* akhenaten.html */,
-				2AC621222ED8833F0023FB4E /* akhenaten */,
+				2A6B0F042EEAF2CE004B706F /* akhenaten Launcher.html */,
+				2AC621222ED8833F0023FB4E /* akhenaten Launcher */,
 				2A0ADD462EE60BAE0080CBED /* akhenaten */,
 				2A0ADD482EE60BB70080CBED /* launch.sh */,
 				2A0ADD4E2EE60BC80080CBED /* Data */,
@@ -293,7 +296,7 @@
 		2AC621212ED8833F0023FB4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AC621202ED8833F0023FB4E /* akhenaten.app */,
+				2AC621202ED8833F0023FB4E /* akhenaten Launcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,9 +304,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AC6211F2ED8833F0023FB4E /* akhenaten */ = {
+		2AC6211F2ED8833F0023FB4E /* akhenaten Launcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AC6212E2ED883400023FB4E /* Build configuration list for PBXNativeTarget "akhenaten" */;
+			buildConfigurationList = 2AC6212E2ED883400023FB4E /* Build configuration list for PBXNativeTarget "akhenaten Launcher" */;
 			buildPhases = (
 				2AC6211C2ED8833F0023FB4E /* Sources */,
 				2AC6211D2ED8833F0023FB4E /* Frameworks */,
@@ -320,14 +323,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2AC621222ED8833F0023FB4E /* akhenaten */,
+				2AC621222ED8833F0023FB4E /* akhenaten Launcher */,
 			);
-			name = akhenaten;
+			name = "akhenaten Launcher";
 			packageProductDependencies = (
 				2AC621832ED887E50023FB4E /* Sparkle */,
 			);
 			productName = akhenaten;
-			productReference = 2AC621202ED8833F0023FB4E /* akhenaten.app */;
+			productReference = 2AC621202ED8833F0023FB4E /* akhenaten Launcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -362,7 +365,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2AC6211B2ED8833F0023FB4E /* Build configuration list for PBXProject "akhenaten" */;
+			buildConfigurationList = 2AC6211B2ED8833F0023FB4E /* Build configuration list for PBXProject "akhenaten Launcher" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -390,8 +393,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2ABE3CB12ED8923D00C22DCE /* Compile akhenaten */,
-				2AC6211F2ED8833F0023FB4E /* akhenaten */,
+				2ABE3CB12ED8923D00C22DCE /* Compile akhenaten Launcher */,
+				2AC6211F2ED8833F0023FB4E /* akhenaten Launcher */,
 				2A1974BD2ED8D16700CB7863 /* Bundle innoextract */,
 				2A9BCADD2ED8C4A900671ED4 /* Postscript */,
 				2A9BCAD82ED8C45600671ED4 /* Publish */,
@@ -404,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A6B0F052EEAF2CE004B706F /* akhenaten Launcher.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nbash /Volumes/Homeshare/Xcode/akhenaten/push.command\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nbash /Volumes/Homeshare/Xcode/akhenaten_launcher/push.command\n\n";
 		};
 		2A9BCAE12ED8C4AD00671ED4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -476,7 +480,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "MAIN_APP_PATH=\"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.app\"\n\nrm \"$MAIN_APP_PATH\"/Contents/Resources/game/imgui.ini\nrm \"$MAIN_APP_PATH\"/Contents/Resources/game/akhenaten-log.txt\n\ncodesign --force --deep --sign \"Apple Development: apple@slsoft.de (85JZW6284R)\" \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.app\"\n\n# Prüft Signierung\nif ! spctl --assess --type execute --verbose=4 \"$MAIN_APP_PATH\"; then\n    echo \"❌ Gatekeeper hat die App abgelehnt.\"\n    exit 1\nfi\n\nif ! codesign --verify --deep --strict --verbose=4 \"$MAIN_APP_PATH\"; then\n    echo \"❌ Signaturprüfung fehlgeschlagen.\"\n    exit 1\nfi\n\nERRORS=0\n\nfind \"$MAIN_APP_PATH\" -type f -perm -111 | while IFS= read -r file; do\n    if ! codesign --verify --verbose=4 \"$file\" >/dev/null 2>&1; then\n        echo \"❌ Fehlerhafte Signatur: $file\"\n        ERRORS=1\n    fi\ndone\n\nif [ \"$ERRORS\" -ne 0 ]; then\n    echo \"❌ Mindestens eine Datei im Bundle ist falsch signiert.\"\n    exit 1\nfi\n\n# Prüfen, ob das Upload-Verzeichnis existiert, und Dateien vorbereiten\nUPLOAD_DIR=\"/Volumes/Homeshare/Xcode/akhenaten/upload\"\nif [ -d \"$UPLOAD_DIR\" ]; then\n\n    # HTML-Datei kopieren\n    cp \"$HOME/Documents/GitHub/akhenaten/xcode/akhenaten/akhenaten.html\" \"$UPLOAD_DIR/\"\n    \n    # App als ZIP-Archiv erstellen\n    ditto -c -k --sequesterRsrc --keepParent \"$MAIN_APP_PATH\" \"$UPLOAD_DIR/akhenaten.zip\"\nfi\n\n# Sicherstellen, dass keine alte Version der App auf dem Desktop existiert\nDESKTOP_APP=\"$HOME/Desktop/${PROJECT_NAME}.app\"\nif [ -d \"$DESKTOP_APP\" ]; then\n    rm -rf \"$DESKTOP_APP\"\nfi\n\n# App auf den Desktop kopieren\ncp -a \"$MAIN_APP_PATH\" \"$HOME/Desktop/\"\n";
+			shellScript = "MAIN_APP_PATH=\"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.app\"\n\nrm \"$MAIN_APP_PATH\"/Contents/Resources/game/imgui.ini\nrm \"$MAIN_APP_PATH\"/Contents/Resources/game/akhenaten-log.txt\n\ncodesign --force --deep --sign \"Apple Development: apple@slsoft.de (85JZW6284R)\" \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.app\"\n\n# Prüft Signierung\nif ! spctl --assess --type execute --verbose=4 \"$MAIN_APP_PATH\"; then\n    echo \"❌ Gatekeeper hat die App abgelehnt.\"\n    exit 1\nfi\n\nif ! codesign --verify --deep --strict --verbose=4 \"$MAIN_APP_PATH\"; then\n    echo \"❌ Signaturprüfung fehlgeschlagen.\"\n    exit 1\nfi\n\nERRORS=0\n\nfind \"$MAIN_APP_PATH\" -type f -perm -111 | while IFS= read -r file; do\n    if ! codesign --verify --verbose=4 \"$file\" >/dev/null 2>&1; then\n        echo \"❌ Fehlerhafte Signatur: $file\"\n        ERRORS=1\n    fi\ndone\n\nif [ \"$ERRORS\" -ne 0 ]; then\n    echo \"❌ Mindestens eine Datei im Bundle ist falsch signiert.\"\n    exit 1\nfi\n\n# Prüfen, ob das Upload-Verzeichnis existiert, und Dateien vorbereiten\nUPLOAD_DIR=\"/Volumes/Homeshare/Xcode/akhenaten_launcher/upload\"\nif [ -d \"$UPLOAD_DIR\" ]; then\n\n    # HTML-Datei kopieren\n    cp \"$HOME/Documents/Xcode/akhenaten Launcher/akhenaten Launcher/akhenaten Launcher.html\" \"$UPLOAD_DIR/\"\n    \n    # App als ZIP-Archiv erstellen\n    ditto -c -k --sequesterRsrc --keepParent \"$MAIN_APP_PATH\" \"$UPLOAD_DIR/akhenaten Launcher.zip\"\nfi\n\n# Sicherstellen, dass keine alte Version der App auf dem Desktop existiert\nDESKTOP_APP=\"$HOME/Desktop/${PROJECT_NAME}.app\"\nif [ -d \"$DESKTOP_APP\" ]; then\n    rm -rf \"$DESKTOP_APP\"\nfi\n\n# App auf den Desktop kopieren\ncp -a \"$MAIN_APP_PATH\" \"$HOME/Desktop/\"\n";
 		};
 		2ABE3CB52ED8924300C22DCE /* Compile */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -494,7 +498,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "#!/usr/bin/env bash\n\n# Absoluter Pfad zum Script\nSCRIPT_PATH=\"${PROJECT_DIR}/../../compile_macos.sh\"\nSCRIPT_DIR=\"$(cd \"$(dirname \"$SCRIPT_PATH\")\" && pwd)\"\n\n# Ins Script-Verzeichnis wechseln\ncd \"$SCRIPT_DIR\" || exit 1\n\n# Script ausführbar machen\nchmod 755 \"$SCRIPT_PATH\"\n\n# Homebrew-Tools priorisieren\nexport PATH=\"/opt/homebrew/bin:$PATH\"\n\n# Script mit Bash ausführen\n/bin/bash \"$SCRIPT_PATH\"\n\n# --- Build-Nummer aus Datei auslesen ---\nBUILD_FILE=\"${PROJECT_DIR}/../../build/buildnumber.txt\"\nBUILD_NUMBER=\"b$(<\"$BUILD_FILE\")\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\n\n# --- 2. Info.plist im Projekt dauerhaft anpassen ---\nPROJECT_INFO_PLIST=\"${PROJECT_DIR}/akhenaten/Info.plist\"  # Pfad ggf. anpassen\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$PROJECT_INFO_PLIST\"\n\nexit 0\n";
+			shellScript = "#!/usr/bin/env bash\n\n# Absoluter Pfad zum Script\nSCRIPT_PATH=\"/Users/luigi/Documents/GitHub/akhenaten/compile_macos.sh\"\nSCRIPT_DIR=\"$(cd \"$(dirname \"$SCRIPT_PATH\")\" && pwd)\"\n\n# Ins Script-Verzeichnis wechseln\ncd \"$SCRIPT_DIR\" || exit 1\n\n# Script ausführbar machen\nchmod 755 \"$SCRIPT_PATH\"\n\n# Homebrew-Tools priorisieren\nexport PATH=\"/opt/homebrew/bin:$PATH\"\n\n# Script mit Bash ausführen\n/bin/bash \"$SCRIPT_PATH\"\n\n# --- Build-Nummer aus Datei auslesen ---\n#BUILD_FILE=\"${PROJECT_DIR}/../../build/buildnumber.txt\"\n#BUILD_NUMBER=\"b$(<\"$BUILD_FILE\")\"\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\n\n# --- 2. Info.plist im Projekt dauerhaft anpassen ---\n#PROJECT_INFO_PLIST=\"${PROJECT_DIR}/akhenaten/Info.plist\"  # Pfad ggf. anpassen\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$PROJECT_INFO_PLIST\"\n\n#exit 0\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -726,7 +730,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = akhenaten/Info.plist;
+				INFOPLIST_FILE = "akhenaten Launcher/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -785,7 +789,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = akhenaten/Info.plist;
+				INFOPLIST_FILE = "akhenaten Launcher/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -850,7 +854,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2ABE3CB22ED8923D00C22DCE /* Build configuration list for PBXAggregateTarget "Compile akhenaten" */ = {
+		2ABE3CB22ED8923D00C22DCE /* Build configuration list for PBXAggregateTarget "Compile akhenaten Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2ABE3CB32ED8923D00C22DCE /* Debug */,
@@ -859,7 +863,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC6211B2ED8833F0023FB4E /* Build configuration list for PBXProject "akhenaten" */ = {
+		2AC6211B2ED8833F0023FB4E /* Build configuration list for PBXProject "akhenaten Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AC6212C2ED883400023FB4E /* Debug */,
@@ -868,7 +872,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC6212E2ED883400023FB4E /* Build configuration list for PBXNativeTarget "akhenaten" */ = {
+		2AC6212E2ED883400023FB4E /* Build configuration list for PBXNativeTarget "akhenaten Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AC6212F2ED883400023FB4E /* Debug */,

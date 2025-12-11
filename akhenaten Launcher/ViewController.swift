@@ -351,49 +351,49 @@ class ViewController: NSViewController {
             
         case 1:
             installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten/pharaoh_german.7z",
+                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_german.7z",
                 archiveName: "pharaoh_german.7z"
             )
             
         case 2:
             installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten/pharaoh_french.7z",
+                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_french.7z",
                 archiveName: "pharaoh_french.7z"
             )
             
         case 3:
             installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten/pharaoh_spanish.7z",
+                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_spanish.7z",
                 archiveName: "pharaoh_spanish.7z"
             )
             
         case 4:
             installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten/pharaoh_polish.7z",
+                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_polish.7z",
                 archiveName: "pharaoh_polish.7z"
             )
             
         case 5:
             installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten/pharaoh_italian.7z",
+                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_italian.7z",
                 archiveName: "pharaoh_italian.7z"
             )
             
         case 6:
             installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten/pharaoh_russian.7z",
+                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_russian.7z",
                 archiveName: "pharaoh_russian.7z"
             )
         
         case 7:
             installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten/pharaoh_english.7z",
+                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_english.7z",
                 archiveName: "pharaoh_english.7z"
             )
             
         case 8:
             installLanguagePack(
-                urlString: "https://www.sl-soft.de/extern/software/akhenaten/pharaoh_thai.7z",
+                urlString: "https://www.sl-soft.de/extern/software/akhenaten_launcher/pharaoh_thai.7z",
                 archiveName: "pharaoh_thai.7z"
             )
             
