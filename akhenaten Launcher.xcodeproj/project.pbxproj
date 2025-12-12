@@ -7,19 +7,6 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		2A1974BD2ED8D16700CB7863 /* Bundle innoextract */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2A1974BE2ED8D16700CB7863 /* Build configuration list for PBXAggregateTarget "Bundle innoextract" */;
-			buildPhases = (
-				2A1974C12ED8D16D00CB7863 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = "Bundle innoextract";
-			packageProductDependencies = (
-			);
-			productName = "Bundle innoextract";
-		};
 		2A9BCAD82ED8C45600671ED4 /* Publish */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 2A9BCADB2ED8C45600671ED4 /* Build configuration list for PBXAggregateTarget "Publish" */;
@@ -68,7 +55,6 @@
 		2A0ADD562EE60BDB0080CBED /* pharaoh_custom_pack.sgx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4B2EE60BC80080CBED /* pharaoh_custom_pack.sgx */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A0ADD572EE60BDB0080CBED /* pharaoh_fonts_pack.sgx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4C2EE60BC80080CBED /* pharaoh_fonts_pack.sgx */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A0ADD582EE60BDB0080CBED /* pharaoh_houses_pack.sgx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4D2EE60BC80080CBED /* pharaoh_houses_pack.sgx */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2A6B0F052EEAF2CE004B706F /* akhenaten Launcher.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A6B0F042EEAF2CE004B706F /* akhenaten Launcher.html */; };
 		2AC621842ED887E50023FB4E /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC621832ED887E50023FB4E /* Sparkle */; };
 /* End PBXBuildFile section */
 
@@ -145,23 +131,23 @@
 		2A1974DA2ED8D38600CB7863 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"akhenaten Launcher.html",
 				bin/7z,
 				"fonts/stixtwotext-bold.ttf",
 				"fonts/stixtwotext-medium.ttf",
 				"fonts/stixtwotext-regular.ttf",
 				innoextract/innoextract,
 				innoextract/innoextract.command,
-				innoextract/libboost_atomic.dylib,
-				innoextract/libboost_date_time.dylib,
-				innoextract/libboost_filesystem.dylib,
-				innoextract/libboost_iostreams.dylib,
-				innoextract/libboost_program_options.dylib,
-				innoextract/libboost_random.dylib,
-				innoextract/libboost_regex.dylib,
-				innoextract/libicudata.78.1.dylib,
-				innoextract/libicui18n.78.1.dylib,
-				innoextract/libicuuc.78.1.dylib,
+				"innoextract/libboost_atomic-mt.dylib",
+				"innoextract/libboost_date_time-mt.dylib",
+				"innoextract/libboost_filesystem-mt.dylib",
+				"innoextract/libboost_iostreams-mt.dylib",
+				"innoextract/libboost_program_options-mt.dylib",
+				"innoextract/libboost_system-mt.dylib",
+				innoextract/libbz2.1.0.8.dylib,
+				innoextract/libiconv.2.dylib,
 				innoextract/liblzma.5.dylib,
+				innoextract/libz.1.3.1.dylib,
 				innoextract/libzstd.1.5.7.dylib,
 			);
 			target = 2AC6211F2ED8833F0023FB4E /* akhenaten Launcher */;
@@ -190,43 +176,40 @@
 				"fonts/stixtwotext-regular.ttf",
 			);
 		};
-		2A1974E92ED8D3AB00CB7863 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+		2A3609C52EEC780F00EEFF34 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
 				innoextract/innoextract = (
 					CodeSignOnCopy,
 				);
-				innoextract/libboost_atomic.dylib = (
+				"innoextract/libboost_atomic-mt.dylib" = (
 					CodeSignOnCopy,
 				);
-				innoextract/libboost_date_time.dylib = (
+				"innoextract/libboost_date_time-mt.dylib" = (
 					CodeSignOnCopy,
 				);
-				innoextract/libboost_filesystem.dylib = (
+				"innoextract/libboost_filesystem-mt.dylib" = (
 					CodeSignOnCopy,
 				);
-				innoextract/libboost_iostreams.dylib = (
+				"innoextract/libboost_iostreams-mt.dylib" = (
 					CodeSignOnCopy,
 				);
-				innoextract/libboost_program_options.dylib = (
+				"innoextract/libboost_program_options-mt.dylib" = (
 					CodeSignOnCopy,
 				);
-				innoextract/libboost_random.dylib = (
+				"innoextract/libboost_system-mt.dylib" = (
 					CodeSignOnCopy,
 				);
-				innoextract/libboost_regex.dylib = (
+				innoextract/libbz2.1.0.8.dylib = (
 					CodeSignOnCopy,
 				);
-				innoextract/libicudata.78.1.dylib = (
-					CodeSignOnCopy,
-				);
-				innoextract/libicui18n.78.1.dylib = (
-					CodeSignOnCopy,
-				);
-				innoextract/libicuuc.78.1.dylib = (
+				innoextract/libiconv.2.dylib = (
 					CodeSignOnCopy,
 				);
 				innoextract/liblzma.5.dylib = (
+					CodeSignOnCopy,
+				);
+				innoextract/libz.1.3.1.dylib = (
 					CodeSignOnCopy,
 				);
 				innoextract/libzstd.1.5.7.dylib = (
@@ -237,24 +220,23 @@
 			membershipExceptions = (
 				innoextract/innoextract,
 				innoextract/innoextract.command,
-				innoextract/libboost_atomic.dylib,
-				innoextract/libboost_date_time.dylib,
-				innoextract/libboost_filesystem.dylib,
-				innoextract/libboost_iostreams.dylib,
-				innoextract/libboost_program_options.dylib,
-				innoextract/libboost_random.dylib,
-				innoextract/libboost_regex.dylib,
-				innoextract/libicudata.78.1.dylib,
-				innoextract/libicui18n.78.1.dylib,
-				innoextract/libicuuc.78.1.dylib,
+				"innoextract/libboost_atomic-mt.dylib",
+				"innoextract/libboost_date_time-mt.dylib",
+				"innoextract/libboost_filesystem-mt.dylib",
+				"innoextract/libboost_iostreams-mt.dylib",
+				"innoextract/libboost_program_options-mt.dylib",
+				"innoextract/libboost_system-mt.dylib",
+				innoextract/libbz2.1.0.8.dylib,
+				innoextract/libiconv.2.dylib,
 				innoextract/liblzma.5.dylib,
+				innoextract/libz.1.3.1.dylib,
 				innoextract/libzstd.1.5.7.dylib,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2AC621222ED8833F0023FB4E /* akhenaten Launcher */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2A1974DA2ED8D38600CB7863 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 2A1974E92ED8D3AB00CB7863 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 2A0B89102EEAB94400EEE9B3 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 2A0ADD6D2EE8EDF60080CBED /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "akhenaten Launcher"; sourceTree = "<group>"; };
+		2AC621222ED8833F0023FB4E /* akhenaten Launcher */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2A1974DA2ED8D38600CB7863 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 2A3609C52EEC780F00EEFF34 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 2A0B89102EEAB94400EEE9B3 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 2A0ADD6D2EE8EDF60080CBED /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "akhenaten Launcher"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,9 +330,6 @@
 				LastUpgradeCheck = 2610;
 				ORGANIZATIONNAME = "SL-Soft.de";
 				TargetAttributes = {
-					2A1974BD2ED8D16700CB7863 = {
-						CreatedOnToolsVersion = 26.1.1;
-					};
 					2A9BCAD82ED8C45600671ED4 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
@@ -395,7 +374,6 @@
 			targets = (
 				2ABE3CB12ED8923D00C22DCE /* Compile akhenaten Launcher */,
 				2AC6211F2ED8833F0023FB4E /* akhenaten Launcher */,
-				2A1974BD2ED8D16700CB7863 /* Bundle innoextract */,
 				2A9BCADD2ED8C4A900671ED4 /* Postscript */,
 				2A9BCAD82ED8C45600671ED4 /* Publish */,
 			);
@@ -407,30 +385,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A6B0F052EEAF2CE004B706F /* akhenaten Launcher.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A1974C12ED8D16D00CB7863 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Erforderliche Abhängigkeiten:\n# ARM: /opt/homebrew/bin/brew install innoextract dylibbundler\n\nls -l \"$PROJECT_DIR/akhenaten/innoextract\" > /private/tmp/yo\n\n# Variablen definieren\nBIN=\"innoextract\"\nDEST_PATH=\"$PROJECT_DIR/akhenaten/innoextract\"\nARM_PATH=\"/opt/homebrew/bin\"\nARM_BUILD=\"arm\"\n\ncd \"$DEST_PATH\"\n\ncp \"$ARM_PATH/$BIN\" .\n\n# Abhängigkeiten bündeln\ndylibbundler -of -cd -b -x innoextract -d . -p \"@executable_path/\"\n\nchmod +x innoextract\n\n\n";
-		};
 		2A1974F62ED90F8F00CB7863 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,24 +473,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2A1974BF2ED8D16700CB7863 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4ATFWV7M4B;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2A1974C02ED8D16700CB7863 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4ATFWV7M4B;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		2A9BCAD92ED8C45600671ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -715,7 +657,7 @@
 				AUTOMATION_APPLE_EVENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10986;
+				CURRENT_PROJECT_VERSION = 10984;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_DEBUG_DYLIB = NO;
@@ -743,8 +685,55 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/akhenaten/innoextract",
 					"$(PROJECT_DIR)/akhenaten/languages",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 0.2.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = de.slsoft.akhenatenLauncher;
@@ -773,7 +762,7 @@
 				AUTOMATION_APPLE_EVENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10986;
+				CURRENT_PROJECT_VERSION = 10984;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_APP_SANDBOX = NO;
@@ -802,8 +791,55 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/akhenaten/innoextract",
 					"$(PROJECT_DIR)/akhenaten/languages",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 0.2.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = de.slsoft.akhenatenLauncher;
@@ -827,15 +863,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A1974BE2ED8D16700CB7863 /* Build configuration list for PBXAggregateTarget "Bundle innoextract" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2A1974BF2ED8D16700CB7863 /* Debug */,
-				2A1974C02ED8D16700CB7863 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2A9BCADB2ED8C45600671ED4 /* Build configuration list for PBXAggregateTarget "Publish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

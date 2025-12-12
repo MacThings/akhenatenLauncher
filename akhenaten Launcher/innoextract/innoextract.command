@@ -11,7 +11,7 @@ function _helpDefaultRead()
     VAL=$1
     
     if [ ! -z "$VAL" ]; then
-        defaults read "${ScriptHome}/Library/Preferences/de.slsoft.akhenaten.plist" "$VAL"
+        defaults read "${ScriptHome}/Library/Preferences/de.slsoft.akhenatenLauncher.plist" "$VAL"
     fi
 }
 
@@ -21,7 +21,7 @@ function _helpDefaultWrite()
     local VAL1=$2
     
     if [ ! -z "$VAL" ] || [ ! -z "$VAL1" ]; then
-        defaults write "${ScriptHome}/Library/Preferences/de.slsoft.akhenaten.plist" "$VAL" "$VAL1"
+        defaults write "${ScriptHome}/Library/Preferences/de.slsoft.akhenatenLauncher.plist" "$VAL" "$VAL1"
     fi
 }
 
