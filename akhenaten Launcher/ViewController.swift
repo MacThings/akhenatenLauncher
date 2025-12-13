@@ -241,9 +241,7 @@ class ViewController: NSViewController {
         let task = Process()
         task.executableURL = scriptURL
         task.currentDirectoryURL = scriptURL.deletingLastPathComponent()
-        task.arguments = [
-            "--font=\"\(NSHomeDirectory())/.config/akhenaten/fonts/stixtwotext-regular.ttf\""
-        ]
+        task.arguments = []
 
         // Wird auf Hintergrundthread aufgerufen, wenn der Prozess endet
         task.terminationHandler = { [weak self] _ in
@@ -648,6 +646,77 @@ class ViewController: NSViewController {
         overlayView = nil
     }
 
+    /// Mark Font stuff
+    struct GameFont {
+        let displayName: String
+        let fontName: String
+        let ttfFile: String
+    }
+    
+    let availableFonts: [GameFont] = [
+        GameFont(
+            displayName: "STIX Two Text Regular",
+            fontName: "STIX Two Text Regular",
+            ttfFile: "stixtwotext-regular.ttf"
+        ),
+        GameFont(
+            displayName: "STIX Two Text Medium",
+            fontName: "STIX Two Text Medium",
+            ttfFile: "stixtwotext-medium.ttf"
+        ),
+        GameFont(
+            displayName: "STIX Two Text Bold",
+            fontName: "STIX Two Text Bold",
+            ttfFile: "stixtwotext-bold.ttf"
+        ),
+        GameFont(
+            displayName: "EB Garamond Regular",
+            fontName: "EB Garamond Regular",
+            ttfFile: "ebgaramond-regular.ttf"
+        ),
+        GameFont(
+            displayName: "EB Garamond Medium",
+            fontName: "EB Garamond Medium",
+            ttfFile: "ebgaramond-medium.ttf"
+        ),
+        GameFont(
+            displayName: "EB Garamond Bold",
+            fontName: "EB Garamond Bold",
+            ttfFile: "ebgaramond-bold.ttf"
+        ),
+        GameFont(
+            displayName: "Source Sans 3 Regular",
+            fontName: "Source Sans 3 Regular",
+            ttfFile: "sourcesans3-regular.ttf"
+        ),
+        GameFont(
+            displayName: "Source Sans 3 Medium",
+            fontName: "Source Sans 3 Medium",
+            ttfFile: "sourcesans3-medium.ttf"
+        ),
+        GameFont(
+            displayName: "Source Sans 3 Bold",
+            fontName: "Source Sans 3 Bold",
+            ttfFile: "sourcesans3-bold.ttf"
+        ),
+        GameFont(
+            displayName: "Noto Sans Regular",
+            fontName: "Noto Sans Regular",
+            ttfFile: "notosans-regular.ttf"
+        ),
+        GameFont(
+            displayName: "Noto Sans Medium",
+            fontName: "Noto Sans Medium",
+            ttfFile: "notosans-medium.ttf"
+        ),
+        GameFont(
+            displayName: "Noto Sans Bold",
+            fontName: "Noto Sans Bold",
+            ttfFile: "notosans-bold.ttf"
+        )
+        
+    ]
+    
     func registerCustomFonts() {
         // Alle TTFs im Subfolder "fonts" holen
         let urls = Bundle.main.urls(forResourcesWithExtension: "ttf",
@@ -658,19 +727,40 @@ class ViewController: NSViewController {
         }
     }
 
+    
+    @IBAction func setFont(_ sender: Any) {
+        guard let item = game_font.selectedItem,
+                  let ttfName = item.representedObject as? String else {
+                return
+            }
+
+            UserDefaults.standard.set(ttfName, forKey: "gameFontTTF")
+    }
+    
     func setupGameFontPopup() {
         game_font.removeAllItems()
-        let fontNames = ["STIX Two Text Regular", "STIX Two Text Medium", "STIX Two Text Bold"]
 
-        for name in fontNames {
-            game_font.addItem(withTitle: name)
-            if let item = game_font.lastItem,
-               let font = NSFont(name: name, size: 17) {
-                let attr = NSAttributedString(string: name,
-                                              attributes: [.font: font])
-                item.attributedTitle = attr
+            for font in availableFonts {
+                game_font.addItem(withTitle: font.displayName)
+
+                if let item = game_font.lastItem,
+                   let nsFont = NSFont(name: font.fontName, size: 17) {
+
+                    item.attributedTitle = NSAttributedString(
+                        string: font.displayName,
+                        attributes: [.font: nsFont]
+                    )
+
+                    // WICHTIG: Metadaten anhängen
+                    item.representedObject = font.ttfFile
+                }
             }
-        }
+
+            // Optional: gespeicherte Auswahl wiederherstellen
+            if let savedTTF = UserDefaults.standard.string(forKey: "gameFontTTF"),
+               let index = availableFonts.firstIndex(where: { $0.ttfFile == savedTTF }) {
+                game_font.selectItem(at: index)
+            }
     }
     
     func updateInstalledSoundpatchLabel() {

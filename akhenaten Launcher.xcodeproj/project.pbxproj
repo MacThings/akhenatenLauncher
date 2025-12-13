@@ -168,6 +168,15 @@
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 2A0B89002EEAB89B00EEE9B3 /* Copy fonts */;
 			membershipExceptions = (
+				"fonts/ebgaramond-bold.ttf",
+				"fonts/ebgaramond-medium.ttf",
+				"fonts/ebgaramond-regular.ttf",
+				"fonts/notosans-bold.ttf",
+				"fonts/notosans-medium.ttf",
+				"fonts/notosans-regular.ttf",
+				"fonts/sourcesans3-bold.ttf",
+				"fonts/sourcesans3-medium.ttf",
+				"fonts/sourcesans3-regular.ttf",
 				"fonts/stixtwotext-bold.ttf",
 				"fonts/stixtwotext-medium.ttf",
 				"fonts/stixtwotext-regular.ttf",
