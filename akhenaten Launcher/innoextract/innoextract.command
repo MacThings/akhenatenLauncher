@@ -56,6 +56,11 @@ function gog_install()
         echo "window_height=600" >> "$HOME/.config/akhenaten/akhenaten.cfg"
         
     fi
+    
+    cd "$MY_PATH"
+    
+    cp -r ../fonts "$HOME/.config/akhenaten"
+    cp ../game/Data/neucha.ttf "$HOME/.config/akhenaten/fonts"
 }
 
 $1

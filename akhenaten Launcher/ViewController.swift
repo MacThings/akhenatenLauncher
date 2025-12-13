@@ -219,29 +219,31 @@ class ViewController: NSViewController {
             return
         }
 
-        let gameURL = resourceURL.appendingPathComponent("game")
-        let scriptURL = gameURL.appendingPathComponent("launch.sh")
+        //let gameURL = resourceURL.appendingPathComponent("game")
+        let scriptURL = resourceURL.appendingPathComponent("launch_game.sh")
 
         let fm = FileManager.default
         if !fm.fileExists(atPath: scriptURL.path) {
-            print("❌ launch.sh nicht gefunden: \(scriptURL.path)")
+            print("❌ launch_game.sh nicht gefunden: \(scriptURL.path)")
             return
         }
 
         if !fm.isExecutableFile(atPath: scriptURL.path) {
-            print("⚠️ launch.sh ist nicht ausführbar — versuche chmod einzusetzen")
+            print("⚠️ launch_game.sh ist nicht ausführbar — versuche chmod einzusetzen")
             do {
                 try fm.setAttributes([.posixPermissions: 0o755], ofItemAtPath: scriptURL.path)
             } catch {
-                print("❌ launch.sh ist nicht ausführbar und konnte nicht gepatcht werden")
+                print("❌ launch_game.sh ist nicht ausführbar und konnte nicht gepatcht werden")
                 return
             }
         }
 
         let task = Process()
         task.executableURL = scriptURL
-        task.currentDirectoryURL = gameURL
-        task.arguments = []
+        task.currentDirectoryURL = scriptURL.deletingLastPathComponent()
+        task.arguments = [
+            "--font=\"\(NSHomeDirectory())/.config/akhenaten/fonts/stixtwotext-regular.ttf\""
+        ]
 
         // Wird auf Hintergrundthread aufgerufen, wenn der Prozess endet
         task.terminationHandler = { [weak self] _ in
@@ -253,7 +255,7 @@ class ViewController: NSViewController {
         do {
             try task.run()
             showOverlay()
-            print("▶️ launch.sh gestartet")
+            print("▶️ launch_game.sh gestartet")
         } catch {
             print("❌ Fehler beim Starten: \(error)")
         }
