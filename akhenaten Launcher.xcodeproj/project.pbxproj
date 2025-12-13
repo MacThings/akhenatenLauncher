@@ -50,7 +50,6 @@
 
 /* Begin PBXBuildFile section */
 		2A0ADD532EE60BD40080CBED /* akhenaten in Copy akhenaten binary */ = {isa = PBXBuildFile; fileRef = 2A0ADD462EE60BAE0080CBED /* akhenaten */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2A0ADD542EE60BD40080CBED /* launch.sh in Copy akhenaten binary */ = {isa = PBXBuildFile; fileRef = 2A0ADD482EE60BB70080CBED /* launch.sh */; };
 		2A0ADD552EE60BDB0080CBED /* neucha.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4A2EE60BC80080CBED /* neucha.ttf */; };
 		2A0ADD562EE60BDB0080CBED /* pharaoh_custom_pack.sgx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4B2EE60BC80080CBED /* pharaoh_custom_pack.sgx */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A0ADD572EE60BDB0080CBED /* pharaoh_fonts_pack.sgx in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0ADD4C2EE60BC80080CBED /* pharaoh_fonts_pack.sgx */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -96,7 +95,6 @@
 			dstSubfolderSpec = 7;
 			files = (
 				2A0ADD532EE60BD40080CBED /* akhenaten in Copy akhenaten binary */,
-				2A0ADD542EE60BD40080CBED /* launch.sh in Copy akhenaten binary */,
 			);
 			name = "Copy akhenaten binary";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +116,6 @@
 
 /* Begin PBXFileReference section */
 		2A0ADD462EE60BAE0080CBED /* akhenaten */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = akhenaten; path = /Users/luigi/Documents/GitHub/akhenaten/build/akhenaten.app/Contents/MacOS/akhenaten; sourceTree = "<absolute>"; };
-		2A0ADD482EE60BB70080CBED /* launch.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = launch.sh; path = /Users/luigi/Documents/GitHub/akhenaten/build/akhenaten.app/Contents/MacOS/launch.sh; sourceTree = "<absolute>"; };
 		2A0ADD4A2EE60BC80080CBED /* neucha.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = neucha.ttf; sourceTree = "<group>"; };
 		2A0ADD4B2EE60BC80080CBED /* pharaoh_custom_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_custom_pack.sgx; sourceTree = "<group>"; };
 		2A0ADD4C2EE60BC80080CBED /* pharaoh_fonts_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_fonts_pack.sgx; sourceTree = "<group>"; };
@@ -269,7 +266,6 @@
 				2A6B0F042EEAF2CE004B706F /* akhenaten Launcher.html */,
 				2AC621222ED8833F0023FB4E /* akhenaten Launcher */,
 				2A0ADD462EE60BAE0080CBED /* akhenaten */,
-				2A0ADD482EE60BB70080CBED /* launch.sh */,
 				2A0ADD4E2EE60BC80080CBED /* Data */,
 				2AC621212ED8833F0023FB4E /* Products */,
 			);
