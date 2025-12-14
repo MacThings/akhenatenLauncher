@@ -3,6 +3,7 @@ import Foundation
 import AppKit
 import CoreText
 import CryptoKit
+import UniformTypeIdentifiers
 
 extension Substring {
     func intValue(forKey key: String) -> Int? {
@@ -38,7 +39,6 @@ class ViewController: NSViewController {
     @IBOutlet weak var window_height: NSTextField!
     
     @IBOutlet weak var game_font: NSPopUpButton!
-    
     
     var configWindowMode: Int = 1
     var configWindowWidth: Int = 800
@@ -276,7 +276,12 @@ class ViewController: NSViewController {
     /// MARK: EXE auswählen
     private func requestGOGInstaller() {
         let dialog = NSOpenPanel()
-        dialog.allowedFileTypes = ["exe"]
+        if let exeType = UTType(filenameExtension: "exe") {
+            dialog.allowedContentTypes = [exeType]
+        } else {
+            // Fallback: allow any item if UTType resolution fails (very unlikely)
+            dialog.allowedContentTypes = []
+        }
         dialog.allowsMultipleSelection = false
         dialog.canChooseDirectories = false
         
