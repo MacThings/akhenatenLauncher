@@ -117,6 +117,7 @@
 		2A0ADD4B2EE60BC80080CBED /* pharaoh_custom_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_custom_pack.sgx; sourceTree = "<group>"; };
 		2A0ADD4C2EE60BC80080CBED /* pharaoh_fonts_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_fonts_pack.sgx; sourceTree = "<group>"; };
 		2A0ADD4D2EE60BC80080CBED /* pharaoh_houses_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_houses_pack.sgx; sourceTree = "<group>"; };
+		2A360A832EF020E000EEFF34 /* neucha.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = neucha.ttf; sourceTree = "<group>"; };
 		2A6B0F042EEAF2CE004B706F /* akhenaten Launcher.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "akhenaten Launcher.html"; path = "akhenaten Launcher/akhenaten Launcher.html"; sourceTree = "<group>"; };
 		2AC621202ED8833F0023FB4E /* akhenaten Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "akhenaten Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -253,6 +254,11 @@
 		};
 		2A360A782EF0164200EEFF34 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				fonts/neucha.ttf = (
+					CodeSignOnCopy,
+				);
+			};
 			buildPhase = 2AC6217D2ED886EE0023FB4E /* CopyFiles */;
 			membershipExceptions = (
 				fonts/neucha.ttf,
@@ -282,6 +288,7 @@
 				2A0ADD4B2EE60BC80080CBED /* pharaoh_custom_pack.sgx */,
 				2A0ADD4C2EE60BC80080CBED /* pharaoh_fonts_pack.sgx */,
 				2A0ADD4D2EE60BC80080CBED /* pharaoh_houses_pack.sgx */,
+				2A360A832EF020E000EEFF34 /* neucha.ttf */,
 			);
 			name = Data;
 			path = /Users/luigi/Documents/GitHub/akhenaten/build/akhenaten.app/Contents/MacOS/Data;
