@@ -660,6 +660,21 @@ class ViewController: NSViewController {
     
     let availableFonts: [GameFont] = [
         GameFont(
+            displayName: "Neucha (Standard)",
+            fontName: "Neucha",
+            ttfFile: "neucha.ttf"
+        ),
+        GameFont(
+            displayName: "Peralta",
+            fontName: "Peralta",
+            ttfFile: "peralta.ttf"
+        ),
+        GameFont(
+            displayName: "Kameron",
+            fontName: "Kameron",
+            ttfFile: "kameron.ttf"
+        ),
+        GameFont(
             displayName: "STIX Two Text Regular",
             fontName: "STIX Two Text Regular",
             ttfFile: "stixtwotext-regular.ttf"
