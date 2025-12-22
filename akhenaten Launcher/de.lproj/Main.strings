@@ -70,8 +70,8 @@
 /* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
 "Vdr-fp-XzO.title" = "Andere ausblenden";
 
-/* Class = "NSTextFieldCell"; title = "akhenaten Launcher"; ObjectID = "XCC-Eh-Td0"; */
-"XCC-Eh-Td0.title" = "akhenaten Launcher";
+/* Class = "NSTextFieldCell"; title = "Akhenaten Launcher"; ObjectID = "XCC-Eh-Td0"; */
+"XCC-Eh-Td0.title" = "Akhenaten Launcher";
 
 /* Class = "NSButtonCell"; title = "Start Game"; ObjectID = "YQK-qq-I6Z"; */
 "YQK-qq-I6Z.title" = "Spiel starten";

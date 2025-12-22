@@ -33,15 +33,15 @@
 			);
 			productName = Postscript;
 		};
-		2ABE3CB12ED8923D00C22DCE /* Compile akhenaten Launcher */ = {
+		2ABE3CB12ED8923D00C22DCE /* Compile Akhenaten Launcher */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 2ABE3CB22ED8923D00C22DCE /* Build configuration list for PBXAggregateTarget "Compile akhenaten Launcher" */;
+			buildConfigurationList = 2ABE3CB22ED8923D00C22DCE /* Build configuration list for PBXAggregateTarget "Compile Akhenaten Launcher" */;
 			buildPhases = (
 				2ABE3CB52ED8924300C22DCE /* Compile */,
 			);
 			dependencies = (
 			);
-			name = "Compile akhenaten Launcher";
+			name = "Compile Akhenaten Launcher";
 			packageProductDependencies = (
 			);
 			productName = "Compile akhenaten";
@@ -374,7 +374,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2AC6211B2ED8833F0023FB4E /* Build configuration list for PBXProject "akhenaten Launcher" */;
+			buildConfigurationList = 2AC6211B2ED8833F0023FB4E /* Build configuration list for PBXProject "Akhenaten Launcher" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -405,7 +405,7 @@
 				2AC6211F2ED8833F0023FB4E /* Akhenaten Launcher */,
 				2A9BCADD2ED8C4A900671ED4 /* Postscript */,
 				2A9BCAD82ED8C45600671ED4 /* Publish */,
-				2ABE3CB12ED8923D00C22DCE /* Compile akhenaten Launcher */,
+				2ABE3CB12ED8923D00C22DCE /* Compile Akhenaten Launcher */,
 			);
 		};
 /* End PBXProject section */
@@ -955,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2ABE3CB22ED8923D00C22DCE /* Build configuration list for PBXAggregateTarget "Compile akhenaten Launcher" */ = {
+		2ABE3CB22ED8923D00C22DCE /* Build configuration list for PBXAggregateTarget "Compile Akhenaten Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2ABE3CB32ED8923D00C22DCE /* Debug */,
@@ -964,7 +964,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC6211B2ED8833F0023FB4E /* Build configuration list for PBXProject "akhenaten Launcher" */ = {
+		2AC6211B2ED8833F0023FB4E /* Build configuration list for PBXProject "Akhenaten Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AC6212C2ED883400023FB4E /* Debug */,

@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2ABE3CB12ED8923D00C22DCE"
-               BuildableName = "Compile akhenaten Launcher"
-               BlueprintName = "Compile akhenaten Launcher"
+               BuildableName = "Compile Akhenaten Launcher"
+               BlueprintName = "Compile Akhenaten Launcher"
                ReferencedContainer = "container:akhenaten Launcher.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2ABE3CB12ED8923D00C22DCE"
-            BuildableName = "Compile akhenaten Launcher"
-            BlueprintName = "Compile akhenaten Launcher"
+            BuildableName = "Compile Akhenaten Launcher"
+            BlueprintName = "Compile Akhenaten Launcher"
             ReferencedContainer = "container:akhenaten Launcher.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
