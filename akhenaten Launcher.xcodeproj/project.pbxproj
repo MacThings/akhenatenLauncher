@@ -119,7 +119,7 @@
 		2A0ADD4D2EE60BC80080CBED /* pharaoh_houses_pack.sgx */ = {isa = PBXFileReference; lastKnownFileType = file; path = pharaoh_houses_pack.sgx; sourceTree = "<group>"; };
 		2A360A832EF020E000EEFF34 /* neucha.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = neucha.ttf; sourceTree = "<group>"; };
 		2A6B0F042EEAF2CE004B706F /* akhenaten Launcher.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "akhenaten Launcher.html"; path = "akhenaten Launcher/akhenaten Launcher.html"; sourceTree = "<group>"; };
-		2AC621202ED8833F0023FB4E /* akhenaten Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "akhenaten Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC621202ED8833F0023FB4E /* Akhenaten Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Akhenaten Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -157,7 +157,7 @@
 				innoextract/libz.1.3.1.dylib,
 				innoextract/libzstd.1.5.7.dylib,
 			);
-			target = 2AC6211F2ED8833F0023FB4E /* akhenaten Launcher */;
+			target = 2AC6211F2ED8833F0023FB4E /* Akhenaten Launcher */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -308,7 +308,7 @@
 		2AC621212ED8833F0023FB4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AC621202ED8833F0023FB4E /* akhenaten Launcher.app */,
+				2AC621202ED8833F0023FB4E /* Akhenaten Launcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -316,9 +316,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AC6211F2ED8833F0023FB4E /* akhenaten Launcher */ = {
+		2AC6211F2ED8833F0023FB4E /* Akhenaten Launcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AC6212E2ED883400023FB4E /* Build configuration list for PBXNativeTarget "akhenaten Launcher" */;
+			buildConfigurationList = 2AC6212E2ED883400023FB4E /* Build configuration list for PBXNativeTarget "Akhenaten Launcher" */;
 			buildPhases = (
 				2AC6211C2ED8833F0023FB4E /* Sources */,
 				2AC6211D2ED8833F0023FB4E /* Frameworks */,
@@ -337,12 +337,12 @@
 			fileSystemSynchronizedGroups = (
 				2AC621222ED8833F0023FB4E /* akhenaten Launcher */,
 			);
-			name = "akhenaten Launcher";
+			name = "Akhenaten Launcher";
 			packageProductDependencies = (
 				2AC621832ED887E50023FB4E /* Sparkle */,
 			);
 			productName = akhenaten;
-			productReference = 2AC621202ED8833F0023FB4E /* akhenaten Launcher.app */;
+			productReference = 2AC621202ED8833F0023FB4E /* Akhenaten Launcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -402,7 +402,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AC6211F2ED8833F0023FB4E /* akhenaten Launcher */,
+				2AC6211F2ED8833F0023FB4E /* Akhenaten Launcher */,
 				2A9BCADD2ED8C4A900671ED4 /* Postscript */,
 				2A9BCAD82ED8C45600671ED4 /* Publish */,
 				2ABE3CB12ED8923D00C22DCE /* Compile akhenaten Launcher */,
@@ -687,7 +687,7 @@
 				AUTOMATION_APPLE_EVENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11019;
+				CURRENT_PROJECT_VERSION = 11069;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_DEBUG_DYLIB = NO;
@@ -702,7 +702,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "akhenaten Launcher/Info.plist";
+				INFOPLIST_FILE = "Akhenaten Launcher/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -715,6 +715,28 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/akhenaten/innoextract",
 					"$(PROJECT_DIR)/akhenaten/languages",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
 					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
 					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
 					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
@@ -792,7 +814,7 @@
 				AUTOMATION_APPLE_EVENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11019;
+				CURRENT_PROJECT_VERSION = 11069;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_APP_SANDBOX = NO;
@@ -808,7 +830,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "akhenaten Launcher/Info.plist";
+				INFOPLIST_FILE = "Akhenaten Launcher/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -821,6 +843,28 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/akhenaten/innoextract",
 					"$(PROJECT_DIR)/akhenaten/languages",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
+					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
 					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
 					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
 					"$(PROJECT_DIR)/akhenaten\\ Launcher/innoextract",
@@ -929,7 +973,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC6212E2ED883400023FB4E /* Build configuration list for PBXNativeTarget "akhenaten Launcher" */ = {
+		2AC6212E2ED883400023FB4E /* Build configuration list for PBXNativeTarget "Akhenaten Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AC6212F2ED883400023FB4E /* Debug */,
